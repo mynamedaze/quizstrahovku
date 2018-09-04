@@ -1,0 +1,110 @@
+.regret__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 62px;
+    padding-bottom: 91px;
+  }
+}
+.regret__title {
+  @include title-main;
+  box-sizing: border-box;
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 244px;
+    @include centers;
+    padding-left: 48px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 50px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 56px;
+    margin-bottom: 0;
+    margin-left: 97px;
+  }
+}
+.regret__title::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("/img/ne_otkaz.svg");
+  left: 0;
+  top: 50%;
+  @media #{$max-mobile-width} {
+    width: 34px;
+    height: 35px;
+    transform: translateY(-17px);
+  }
+  @media #{$min-tablet-width} {
+    width: 34px;
+    height: 35px;
+    transform: translateY(-17px);
+  }
+  @media #{$min-desktop-width} {
+    width: 45px;
+    height: 46px;
+    transform: translateY(-23px);
+  }
+}
+.regret__title-strong {
+  color: $title-strong-color;
+}
+.regret__content {
+  @media #{$min-tablet-width} {
+    display: flex;
+    align-items: center;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 13px;
+    margin-left: 108px;
+  }
+}
+.regret__img-field {
+  flex-shrink: 0;
+  @media #{$max-mobile-width} {
+    width: 123px;
+    @include centers;
+    margin-top: 43px;
+  }
+  @media #{$min-tablet-width}{
+    width: 166px;
+    order: 2;
+    margin-left: 17px;
+  }
+  @media #{$min-desktop-width} {
+    width: 233px;
+    margin-left: 60px;
+  }
+}
+.regret__paragraph-field {
+  @media #{$max-mobile-width} {
+    margin-top: 20px;
+  }
+}
+.regret__paragraph {
+  text-align: justify;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin-top: 25px;
+  }
+}

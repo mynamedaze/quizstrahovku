@@ -1,0 +1,35 @@
+@import "normalize.scss";
+
+@import "global/fonts.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+@import "owl.carousel/owl.carousel.scss";
+@import "owl.carousel/owl.theme.default.scss";
+
+@import "jquery.fancybox.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/banks.scss";
+@import "blocks/zakon.scss";
+@import "blocks/regret.scss";
+@import "blocks/pro.scss";
+@import "blocks/seven.scss";
+@import "blocks/stages.scss";
+@import "blocks/proof.scss";
+@import "blocks/feedback.scss";
+@import "blocks/about.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/confid.scss";
+
+@import "blocks/popup-callback.scss";
+@import "blocks/popup-success.scss";
+@import "blocks/popup-city.scss";
+@import "blocks/gallery-popup.scss";
+@import "blocks/overlay.scss";
+@import "blocks/floating-menu.scss";

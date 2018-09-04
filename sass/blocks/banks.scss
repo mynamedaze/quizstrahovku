@@ -1,0 +1,175 @@
+.banks__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 29px;
+    padding-bottom: 60px;
+  }
+}
+.banks__title {
+  text-align: center;
+  @include title-main;
+}
+.banks__title-strong {
+  color: $title-strong-color;
+}
+.banks__list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  @media #{$max-mobile-width} {
+    margin-top: 20px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 20px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 30px;
+  }
+}
+.banks__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media #{$max-mobile-width} {
+    width: 50%;
+    min-height: 75px;
+  }
+  @media #{$min-tablet-width} {
+    width: 25%;
+    min-height: 75px;
+  }
+  @media #{$min-desktop-width} {
+    min-height: 120px;
+  }
+}
+.banks__img-field--sber {
+  @media #{$max-mobile-width} {
+    width: 106px;
+  }
+  @media #{$min-tablet-width} {
+    width: 119px;
+  }
+  @media #{$min-desktop-width} {
+    width: 184px;
+  }
+}
+.banks__img-field--rennesans {
+  @media #{$max-mobile-width} {
+    width: 90px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100px;
+  }
+  @media #{$min-desktop-width} {
+    width: 155px;
+  }
+}
+.banks__img-field--pochta {
+  @media #{$max-mobile-width} {
+    width: 106px;
+  }
+  @media #{$min-tablet-width} {
+    width: 119px;
+  }
+  @media #{$min-desktop-width} {
+    width: 183px;
+  }
+}
+.banks__img-field--home {
+  @media #{$max-mobile-width} {
+    width: 90px;
+  }
+  @media #{$min-tablet-width} {
+    width: 97px;
+  }
+  @media #{$min-desktop-width} {
+    width: 136px;
+  }
+}
+.banks__img-field--alfa {
+  @media #{$max-mobile-width} {
+    width: 91px;
+  }
+  @media #{$min-tablet-width} {
+    width: 102px;
+  }
+  @media #{$min-desktop-width} {
+    width: 157px;
+  }
+}
+.banks__img-field--raiff {
+  @media #{$max-mobile-width} {
+    width: 96px;
+  }
+  @media #{$min-tablet-width} {
+    width: 109px;
+  }
+  @media #{$min-desktop-width} {
+    width: 168px;
+  }
+}
+.banks__img-field--unicredit {
+  @media #{$max-mobile-width} {
+    width: 81px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100px;
+  }
+  @media #{$min-desktop-width} {
+    width: 143px;
+  }
+}
+.banks__img-field--rosbank {
+  @media #{$max-mobile-width} {
+    width: 102px;
+  }
+  @media #{$min-tablet-width} {
+    width: 115px;
+  }
+  @media #{$min-desktop-width} {
+    width: 177px;
+  }
+}
+.banks__img-field--sovkom {
+  @media #{$max-mobile-width} {
+    width: 98px;
+  }
+  @media #{$min-tablet-width} {
+    width: 111px;
+  }
+  @media #{$min-desktop-width} {
+    width: 171px;
+  }
+}
+.banks__img-field--otp {
+  @media #{$max-mobile-width} {
+    width: 92px;
+  }
+  @media #{$min-tablet-width} {
+    width: 104px;
+  }
+  @media #{$min-desktop-width} {
+    width: 161px;
+  }
+}
+.banks__img-field--tinkoff {
+  @media #{$max-mobile-width} {
+    width: 70px;
+  }
+  @media #{$min-tablet-width} {
+    width: 79px;
+  }
+  @media #{$min-desktop-width} {
+    width: 121px;
+  }
+}

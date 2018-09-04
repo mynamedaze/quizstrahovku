@@ -1,0 +1,113 @@
+html {
+  font-size: 0.625rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $links-color;
+  font-family: $font-main;
+  transition: all 0.2s ease 0s;
+}
+strong {
+  font-weight: 700;
+}
+.semibold {
+  font-weight: 600;
+}
+div,
+article,
+section {
+  box-sizing: border-box;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: $font-main;
+  font-weight: 300;
+  margin: 0px;
+  color: $text-main-color;
+  background-color: $main-bg;
+  transition: all 0.2s ease 0s;
+}
+input,
+textarea,
+select {
+  font-family: $font-main;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    border-radius: 5px;
+  }
+  @media #{$min-tablet-width} {
+    border-radius: 5px;
+  }
+  @media #{$min-desktop-width} {
+    border-radius: 5px;
+  }
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+textarea,
+select {
+  @media #{$max-mobile-width} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus {
+  outline-width: 0;
+  outline: none;
+}
+button {
+  font-family: $font-main;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button:focus {
+  outline-width: 0;
+  outline: none;
+}
+label {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.clearfix::after { 
+  content: ""; /* Генерируем пустой элемент */
+  clear: both; /* Отменяем обтекание*/
+  display: block; /* Блочный элемент */
+}
+.disable {
+  display: none !important;
+}

@@ -1,0 +1,106 @@
+.pro {
+  background-color: #efefef;
+}
+.pro__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 28px;
+    padding-bottom: 44px;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    padding-top: 40px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 22px;
+  }
+}
+.pro__img-field {
+  font-size: 0;
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    flex-shrink: 0;
+    width: 185px;
+    margin-right: 23px;
+    align-self: flex-end;
+  }
+  @media #{$min-desktop-width} {
+    width: 330px;
+    margin-right: 78px;
+  }
+}
+.pro__paragraph-field {
+  @media #{$min-tablet-width} {
+    align-self: center;
+  }
+}
+.pro__title {
+  @include title-main;
+  box-sizing: border-box;
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 235px;
+    @include centers;
+    padding-left: 67px;
+    margin-bottom: 35px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 56px;
+    margin-bottom: 35px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 78px;
+    margin-bottom: 64px;
+  }
+}
+.pro__title::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("/img/specialists.svg");
+  @media #{$max-mobile-width} {
+    width: 55px;
+    height: 31px;
+    transform: translateY(-15.5px);
+  }
+  @media #{$min-tablet-width} {
+    width: 42px;
+    height: 24px;
+    transform: translateY(-12px);
+  }
+  @media #{$min-desktop-width} {
+    width: 65px;
+    height: 37px;
+    transform: translateY(-18.5px);
+  }
+}
+.pro__title-br {
+  @media #{$min-tablet-width} {
+    display: none;
+  }
+}
+.pro__title-strong {
+  color: $title-strong-color;
+}
+.pro__paragraph {
+  text-align: justify;
+  @media #{$max-mobile-width} {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+}

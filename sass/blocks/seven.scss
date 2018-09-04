@@ -1,0 +1,252 @@
+.seven {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media #{$max-mobile-width} {
+    background-image: url("/img/seven__bg--mobile.jpg");
+  }
+  @media #{$min-tablet-width} {
+    background-image: url("/img/seven__bg--tablet.jpg");
+  }
+  @media #{$min-desktop-width} {
+    background-image: url("/img/seven__bg--desktop.jpg");
+  }
+}
+.seven__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 43px;
+    padding-bottom: 59px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 30px;
+    padding-bottom: 23px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 35px;
+    padding-bottom: 39px;
+  }
+}
+.seven__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  @media #{$max-mobile-width} {
+    font-size: 1.6rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2rem;
+    line-height: 3.6rem;
+    margin-bottom: 0;
+  }
+}
+.seven__subtitle {
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 1.6rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+}
+.seven__formfield {
+  @include centers;
+  @media #{$max-mobile-width} {
+    width: 220px;
+    margin-top: 50px;
+  }
+  @media #{$min-tablet-width} {
+    max-width: 651px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 896px;
+  }
+}
+.seven__input {
+  border: 1px solid #3e4f80;
+  background-color: #f2f2f2;
+  font-weight: 300;
+  @media #{$max-mobile-width} {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    height: 5.6rem;
+    margin-top: 18px;
+  }
+  @media #{$min-tablet-width} {
+    height: 4rem;
+    font-size: 1.2rem;
+    width: 192px;
+  }
+  @media #{$min-desktop-width} {
+    height: 5.5rem;
+    font-size: 1.6rem;
+    width: 265px;
+  }
+}
+.seven__input:focus {
+  border: 1px solid $input-focus;
+}
+.seven__input::-moz-placeholder {
+  color: #a1a6b6; /* Цвет подсказывающего текста */
+ }
+ .seven__input::-webkit-input-placeholder { color: #a1a6b6; }
+ .seven__input:-ms-input-placeholder { color: #a1a6b6; }
+ .seven__input::-ms-input-placeholder { color: #a1a6b6; }
+ .seven__input::placeholder { color: #a1a6b6; } 
+.seven__submit-field {
+  position: relative;
+  @media #{$max-mobile-width} {
+    margin-top: 28px;
+  }
+  @media #{$min-tablet-width} {
+    width: 192px;
+  }
+  @media #{$min-desktop-width} {
+    width: 265px;
+  }
+}
+.seven__submit:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("/img/wallet_icon.svg");
+  @media #{$max-mobile-width} {
+    top: 14px;
+    left: 23px;
+    width: 24px;
+    height: 23px;
+  }
+  @media #{$min-tablet-width} {
+    top: 8px;
+    left: 23px;
+    width: 21px;
+    height: 20px;
+  }
+  @media #{$min-desktop-width} {
+    top: 15px;
+    left: 42px;
+    width: 25px;
+    height: 23px;
+  }
+}
+.seven__submit {
+  box-sizing: border-box;
+  border: 0 solid transparent;
+  display: block;
+  width: 100%;
+  @include main-btn;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media #{$max-mobile-width} {
+    height: 5.6rem;
+    padding-left: 38px;
+    font-size: 1.5rem;
+  }
+  @media #{$min-tablet-width} {
+    height: 4rem;
+    padding-left: 32px;
+    font-size: 1.2rem;
+  }
+  @media #{$min-desktop-width} {
+    height: 5.5rem;
+    padding-left: 35px;
+    font-size: 1.6rem;
+  }
+}
+.seven__submit:hover {
+  @include main-btn--hover;
+}
+.seven__confid-checkbox {
+  display: none;
+}
+.seven__confid-label {
+  display: block;
+  box-sizing: border-box;
+  color: #a1add1;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-left: 21px;
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 21px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 30px;
+    font-size: 1.5rem;
+  }
+}
+.seven__confid-label::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  background-color: #a1add1;
+  border-radius: 2px;
+  @media #{$max-mobile-width} {
+    top: 0;
+    width: 13px;
+    height: 13px;
+  }
+  @media #{$min-tablet-width} {
+    top: 1px;
+    width: 12px;
+    height: 12px;
+  }
+  @media #{$min-desktop-width} {
+    width: 16px;
+    height: 16px;
+  }
+}
+.seven__confid-label::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("/img/checker.svg");
+  @media #{$max-mobile-width} {
+    top: 5px;
+    left: 2px;
+    width: 8px;
+    height: 5px;
+  }
+  @media #{$min-tablet-width} {
+    top: 5px;
+    left: 2px;
+    width: 7px;
+    height: 4px;
+  }
+  @media #{$min-desktop-width} {
+    top: 6px;
+    left: 3px;
+    width: 9px;
+    height: 6px;
+  }
+}
+.seven__confid-link {
+  color: #a1add1;
+  text-decoration: underline;
+}

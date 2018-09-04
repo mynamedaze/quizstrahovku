@@ -1,0 +1,31 @@
+/* TEAM */                       
+Your title: Murat Kudainetov.                          
+Site: murat.kudainetov@gmail.com                          
+Github: mynamedaze                          
+Location: Russia, Maykop.
+                      
+                 
+                        [...]
+						
+
+
+
+						
+                 
+                        [...]
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2018/01/19 
+
+                            
+Standards: HTML5, CSS3, JS
+
+                            
+Components: jQuery.
+
+                            
+Software: Adobe Photoshop, Visual Studio Code, Node.js
